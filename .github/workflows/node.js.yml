@@ -1,6 +1,6 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-name: Node.js CI
+name: CI
 on:
   push:
     branches: [ "main" ]
@@ -27,12 +27,12 @@ jobs:
     # This ID should come from the CI job you saved in ACCELQ application
     jobId: "434522"
     # Run Params(optional) should be JSON string form example: '{"username": "John Todd", "password": "bxW&=UVw"}'
-    runParam: # optional
+    # runParam: # optional
     # Proxy Host (optional)
-    proxyHost: # optional
-    # Proxy Port (optional)
-    proxyPort: # optional
+    # proxyHost: # optional
+    # # Proxy Port (optional)
+    # proxyPort: # optional
     # Percentage ACCELQ test case failure (Optional), beyond which this Step in the Pipeline will be marked as a failure. If this is zero, even a single failed test will cause the Step to fail. If you never want to fail the Pipeline Step due to failing Automation tests, input -1. Input a valid integer between 0 and 100 or, -1.
-    stepFailureThreshold: # optional
+    stepFailureThreshold: "-1"
     # Maximum time to wait for the job to be picked up by an ACCELQ Agent. Default is 15 mins.
-    maxWaitTimeInMins: # optional
+    
