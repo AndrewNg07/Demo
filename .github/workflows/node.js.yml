@@ -22,8 +22,7 @@ jobs:
   # uses: accelq/accelq-ci-github-actions@9a1389e5ad3169f8150f9abd7d77d141ba8abc9f
       uses: accelq/accelq-ci-github-actions@v1.3
       with:
-    # Your ACCELQ Application URL in the exact following format:
-https://<hostname>:<port_num>
+    # Your ACCELQ Application URL in the exact following format:https://<hostname>:<port_num>
        appURL: "https://poc.accelq.io/"
     # Your ACCELQ User ID
        userName: "ajay@accelq.com"
